@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const Card = ({ image }: { image: string }) => {
+const Card = () => {
   return (
     <div className="flex items-center justify-center lg:h-40 lg:w-60 sm:h-10 sm:w-16 backdrop-blur-md duration-700 ease-in-out cursor-pointer">
       <div className="h-[100%] w-[100%] hover:h-[82%] hover:w-[85%] bg-white duration-500 ease-in-out overflow-hidden hover:rounded-xl active:scale-90">
