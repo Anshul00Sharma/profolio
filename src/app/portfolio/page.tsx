@@ -32,9 +32,9 @@ export default function Portfolio() {
         </div>
 
         <div className="grid grid-cols-3 mt-5 gap-2">
-          <Card image={""} />
-          <Card image={""} />
-          <Card image={""} />
+          <Card />
+          <Card />
+          <Card />
         </div>
       </div>
     </div>
