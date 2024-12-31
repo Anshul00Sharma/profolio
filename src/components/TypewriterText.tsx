@@ -5,34 +5,43 @@ export default function TypewriterText() {
 
   const words = [
     "Full Stack Software Engineer                     ",
-    "Based in india                      ",
+    "Based in India                      ",
+    "Another Example Word                     ",
+    "And Another One                     ",
   ];
 
   useEffect(() => {
-    let j = words[0];
-    let k = words[0].charAt(0);
-    let flip = 0;
+    let currentWordIndex = 0;
+    let currentWord = words[currentWordIndex];
+    let displayedText = "";
+    let isDeleting = false;
 
     const interval = setInterval(() => {
-      if (k === "") {
-        flip = 0;
-        j = j === words[0] ? words[1] : words[0];
-      }
-
-      if (flip === 0) {
-        k += j[k.length];
+      if (!isDeleting) {
+        // Typing effect
+        displayedText += currentWord[displayedText.length];
       } else {
-        k = k.substring(0, k.length - 1);
+        // Deleting effect
+        displayedText = displayedText.substring(0, displayedText.length - 1);
       }
 
       if (text.current) {
-        text.current.innerText = String(k);
+        text.current.innerText = displayedText;
       }
-      if (k.length === j.length) {
-        flip = 1;
+
+      if (!isDeleting && displayedText.length === currentWord.length) {
+        // Start deleting after typing the whole word
+        isDeleting = true;
+      } else if (isDeleting && displayedText === "") {
+        // Move to the next word after deleting
+        isDeleting = false;
+        currentWordIndex = (currentWordIndex + 1) % words.length;
+        currentWord = words[currentWordIndex];
       }
     }, 50);
+
     return () => clearInterval(interval);
   }, []);
-  return <div className="text-[12px]  " ref={text}></div>;
+
+  return <div className="text-[12px]" ref={text}></div>;
 }

@@ -1,6 +1,7 @@
 import Heading from "@/components/Heading";
 import Link from "next/link";
 import Card from "@/components/Card";
+import Modal from "@/components/Modal";
 
 export default function Portfolio() {
   return (
@@ -30,11 +31,16 @@ export default function Portfolio() {
         <div className="underline decoration-4 underline-offset-4 decoration-[#F97300] ">
           Projects
         </div>
+        <Modal
+          heading="The Vocabulary app"
+          demo="https://expo.dev/artifacts/eas/dW6wmDzSHrbmzu2C3B9uq2.apk"
+          video="https://www.youtube.com/embed/JiSjFMnHqh0"
+          summery="This is a Vocabulary building app where you can read books and learn new words"
+          id=""
+        />
 
         <div className="grid grid-cols-3 mt-5 gap-2">
-          <Card />
-          <Card />
-          <Card />
+          <Card heading="Vocab App" />
         </div>
       </div>
     </div>

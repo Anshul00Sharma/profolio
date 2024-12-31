@@ -34,27 +34,27 @@ export default function contacts() {
         </div>
         <div className="flex flex-row  mt-5">
           <div className="flex-1 ">
-            <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  mb-2 mt-5">
-              <div className="text-[11px] mb-5">
+            <div className=" grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1  mb-2 mt-5">
+              {/* <div className="text-[11px] mb-5">
                 <div className=" flex items-center  mb-5 ">
                   <IoPhonePortraitOutline className="size-5 text-cyan-700 mr-5" />
                   <span className="font-bold text-gray-600">Phone</span>
                 </div>
                 <div>+91-7015-7815-98</div>
-              </div>
-              <div className="text-[11px] mb-5">
+              </div> */}
+              <div className="text-[12px] mb-5">
                 <div className=" flex items-center mb-5 grow">
                   <MdOutlineEmail className="size-5 text-cyan-700 mr-5" />
                   <span className="font-bold text-gray-600">Email</span>
                 </div>
                 <div>anshulsharma.sd.2000@gmail.com</div>
               </div>
-              <div className="text-[11px] mb-5">
+              <div className="text-[12px] mb-5">
                 <div className="flex items-center  mb-5">
                   <IoLocationOutline className="size-5 text-cyan-700 mr-5" />
                   <span className="font-bold text-gray-600">Address</span>
                 </div>
-                <div>Ambala ,Haryana ,India</div>
+                <div>Haryana India</div>
               </div>
             </div>
           </div>

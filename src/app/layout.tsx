@@ -37,6 +37,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          src="https://cdn.jsdelivr.net/gh/creativetimofficial/david-ai@1.0.4/packages/dist/david-ai.min.js"
+          defer
+        ></script>
         <main
           className={` h-full w-full p-6 bg-cyan-600 ${roboto.className} tracking-wide ease-in-out duration-300`}
         >

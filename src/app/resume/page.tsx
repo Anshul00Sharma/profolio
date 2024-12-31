@@ -37,8 +37,8 @@ export default function resume() {
           <div className="flex-1">
             <div className=" text-xs  mb-3">
               I’m an enterprise level web/mobile application developer with the
-              expertise in Frameworks / Programming Languages Angular + NodeJS +
-              NESTJS + Flutter + Serverless + GraphQL + WebRTC etc.
+              expertise in Frameworks / Programming Languages React + React
+              Native + NodeJS + Serverless + WebRTC etc.
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  mb-2 mt-5">
               <div className="text-[11px]  col-span-1">
@@ -79,9 +79,8 @@ export default function resume() {
         </div>
         <div className="flex flex-row max-h-max mt-5">
           <div className=" text-xs  mb-3">
-            Angular, Typescript, NodeJs, Flutter, GraphQL, Serverless, WebRTC,
-            NestJs, Ngrx, Dart, Material, AWS, AWS Amplify, MongoDB, AWS
-            Websockets
+            React, React Native, Typescript, NodeJs, Serverless, WebRTC, NestJs,
+            Ngrx, AWS, AWS Amplify, MongoDB, AWS Websockets
           </div>
         </div>
       </div>
@@ -96,13 +95,23 @@ export default function resume() {
               <div className="h-32 w-8 border-l-4 border-t-4  border-cyan-700 mt-2"></div>
               <div>
                 <div className="relative border-2 h-min px-1 border-cyan-700 text-cyan-700 text-[12px] w-max mb-2">
-                  October 2023 - Present
+                  September 2024 - Present
+                </div>
+                <div className="text-[12px] font-bold mb-2">Freelancing</div>
+                {/* <div className="text-[12px] ">Founding Member Tech</div> */}
+              </div>
+            </div>
+            <div className="flex flex-row relative top-7">
+              <div className="h-32 w-8 border-l-4 border-t-4  border-cyan-700 mt-2"></div>
+              <div>
+                <div className="relative border-2 h-min px-1 border-cyan-700 text-cyan-700 text-[12px] w-max mb-2">
+                  October 2023 - September 2024
                 </div>
                 <div className="text-[12px] font-bold mb-2">Astro Bharat</div>
                 <div className="text-[12px] ">Founding Member Tech</div>
               </div>
             </div>
-            <div className="flex flex-row relative top-6">
+            <div className="flex flex-row relative top-5">
               <div className="h-32 w-8 border-l-4 border-t-4  border-cyan-700 mt-2 "></div>
               <div>
                 <div className="relative border-2 h-min px-1 border-cyan-700 text-cyan-700 text-[12px] w-max mb-2">
