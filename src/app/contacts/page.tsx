@@ -1,6 +1,6 @@
 import Heading from "@/components/Heading";
 import Link from "next/link";
-import { IoPhonePortraitOutline } from "react-icons/io5";
+
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 
