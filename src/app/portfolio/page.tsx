@@ -28,9 +28,10 @@ export default function Portfolio() {
       <div className="h-72" />
 
       <div className="mb-40 w-4/5 px-5">
-        <div className="underline decoration-4 underline-offset-4 decoration-[#F97300] ">
-          Projects
+        <div className="underline decoration-4 underline-offset-4 decoration-[#F97300] text-xl">
+          Major Projects
         </div>
+
         <Modal
           heading="The Vocabulary app"
           demo="https://expo.dev/artifacts/eas/dW6wmDzSHrbmzu2C3B9uq2.apk"
@@ -39,8 +40,15 @@ export default function Portfolio() {
           id=""
         />
 
-        <div className="grid grid-cols-3 mt-5 gap-2">
-          <Card heading="Vocab App" />
+        <div className="grid grid-cols-3 mt-10 gap-2">
+          <Card heading="Vocab Native App" target="one" />
+        </div>
+        <div className="underline decoration-4 underline-offset-4 decoration-[#F97300] text-xl mt-20">
+          Minor Projects
+        </div>
+        <div className="grid grid-cols-3 mt-10 gap-2">
+          <Card heading="Search Agent Chatbot" target="one" />
+          <Card heading="Twitter Bot" target="one" />
         </div>
       </div>
     </div>

@@ -6,8 +6,8 @@ export default function TypewriterText() {
   const words = [
     "Full Stack Software Engineer                     ",
     "Based in India                      ",
-    "Another Example Word                     ",
-    "And Another One                     ",
+    "Passionate about coding and problem-solving     ",
+    "Specialized in React Native      ",
   ];
 
   useEffect(() => {
