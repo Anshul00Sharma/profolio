@@ -20,7 +20,7 @@ const Search = () => {
   return (
     <>
       <div className="text-3xl mt-10 font-bold text-cyan-700">
-        Comrade Karl Smith Marx
+        Ai search Agent
       </div>
       <div className=" w-[60%]  ">
         <div className=" mt-5 mx-5 text-2xl font-bold">Gallery</div>
