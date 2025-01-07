@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import ss1 from "../../public/Screenshot_20250107-093847.jpg";
@@ -12,6 +14,12 @@ import ss9 from "../../public/Screenshot_20250107-093651.png";
 import ss10 from "../../public/Screenshot_20250107-093629.png";
 import ss11 from "../../public/Screenshot_20250107-093624.png";
 
+const Search = () => {
+  return <div>Search</div>;
+};
+const TwitterBot = () => {
+  return <div>TwitterBot</div>;
+};
 const Vocab = () => {
   return (
     <>
@@ -131,7 +139,8 @@ const Vocab = () => {
   );
 };
 
-const Modal = () => {
+const Modal = ({ target }: { target: string }) => {
+  console.log(target);
   return (
     <div
       className="fixed inset-0 bg-stone-800 bg-opacity-75 flex justify-center items-center opacity-0 pointer-events-none transition-opacity duration-300 ease-out z-[9999]"
@@ -143,7 +152,9 @@ const Modal = () => {
           data-dui-dismiss="modal"
           className="absolute top-1 right-1 w-[15px] h-[15px] bg-[#F97300] hover:scale-[1.1] active:scale-[1] transition-transform"
         ></div>
-        <Vocab />
+        {target === "one" ? <Vocab /> : null}
+        {target === "two" ? <Search /> : null}
+        {target === "three" ? <TwitterBot /> : null}
       </div>
     </div>
   );

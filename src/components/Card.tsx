@@ -1,9 +1,18 @@
 import React from "react";
 // import Image from "next/image";
 
-const Card = ({ heading, target }: { heading: string; target: string }) => {
+const Card = ({
+  heading,
+  target,
+  onClick,
+}: {
+  heading: string;
+  target: string;
+  onClick?: () => void;
+}) => {
   return (
     <div
+      onClick={onClick}
       data-dui-toggle="modal"
       data-dui-target={"#" + target}
       className="flex items-center justify-center lg:h-[100px] lg:w-[220px] sm:h-10 sm:w-16 backdrop-blur-md duration-300 ease-in-out cursor-pointer"

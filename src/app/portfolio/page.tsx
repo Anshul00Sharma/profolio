@@ -1,9 +1,12 @@
+"use client";
 import Heading from "@/components/Heading";
 import Link from "next/link";
 import Card from "@/components/Card";
 import Modal from "@/components/Modal";
+import { useState } from "react";
 
 export default function Portfolio() {
+  const [name, setName] = useState("");
   return (
     <div className=" w-full flex flex-col items-center lg:px-36 md:px-9 sm:px-5 px-5 lg:mt-40 md:mt-24 sm:mt-16 mt-10">
       {/* About me */}
@@ -32,23 +35,23 @@ export default function Portfolio() {
           Major Projects
         </div>
 
-        <Modal
-          heading="The Vocabulary app"
-          demo="https://expo.dev/artifacts/eas/dW6wmDzSHrbmzu2C3B9uq2.apk"
-          video="https://www.youtube.com/embed/JiSjFMnHqh0"
-          summery="This is a Vocabulary building app where you can read books and learn new words"
-          id=""
-        />
+        <Modal target={name} />
 
         <div className="grid grid-cols-3 mt-10 gap-2">
-          <Card heading="Vocab Native App" target="one" />
+          <div onClick={() => setName("one")}>
+            <Card heading="Vocab Native App" target="one" />
+          </div>
         </div>
         <div className="underline decoration-4 underline-offset-4 decoration-[#F97300] text-xl mt-20">
           Minor Projects
         </div>
         <div className="grid grid-cols-3 mt-10 gap-2">
-          <Card heading="Search Agent Chatbot" target="one" />
-          <Card heading="Twitter Bot" target="one" />
+          <div onClick={() => setName("two")}>
+            <Card heading="Search Agent Chatbot" target="one" />
+          </div>
+          <div onClick={() => setName("three")}>
+            <Card heading="Twitter Bot" target="one" />
+          </div>
         </div>
       </div>
     </div>
