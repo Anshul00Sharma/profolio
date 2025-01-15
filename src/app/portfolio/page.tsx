@@ -41,6 +41,9 @@ export default function Portfolio() {
           <div onClick={() => setName("one")}>
             <Card heading="Vocab Native App" target="one" />
           </div>
+          <div onClick={() => setName("four")}>
+            <Card heading="Google lens clone" target="one" />
+          </div>
         </div>
         <div className="underline decoration-4 underline-offset-4 decoration-[#F97300] text-xl mt-20">
           Minor Projects

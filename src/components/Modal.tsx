@@ -15,6 +15,15 @@ import ss10 from "../../public/Screenshot_20250107-093629.png";
 import ss11 from "../../public/Screenshot_20250107-093624.png";
 import ss12 from "../../public/Screenshot 2025-01-07 174907.png";
 import ss13 from "../../public/Screenshot 2025-01-07 175249.png";
+import gl1 from "../../public/gl-1.png";
+import gl2 from "../../public/gl-2.png";
+import gl3 from "../../public/gl-3.png";
+import gl4 from "../../public/gl-4.png";
+import gl5 from "../../public/gl-5.png";
+import gl6 from "../../public/gl-6.png";
+import gl7 from "../../public/gl-7.png";
+import gl8 from "../../public/gl-8.png";
+import gl9 from "../../public/gl-9.png";
 
 const Search = () => {
   return (
@@ -266,6 +275,123 @@ const Vocab = () => {
     </>
   );
 };
+const GoogleLens = () => {
+  return (
+    <>
+      <div className="text-3xl mt-10 font-bold text-cyan-700">
+        Google Lens Clone
+      </div>
+      <div
+        className=" border-4 border-[#F97300] mt-10"
+        style={{ height: "500px", width: "300px" }}
+      >
+        <iframe
+          className="w-full h-full"
+          src={"https://www.youtube.com/embed/PUmpvN79dxo"}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+      <div className=" w-[60%]  ">
+        <div className=" mt-5 mx-5 text-2xl font-bold">Gallery</div>
+        <div className=" flex flex-row my-5 mx-5 overflow-scroll w-[100%]">
+          <Image
+            className="h-[300px] w-[160px] border-2 border-[#F97300] mr-2 rounded-md"
+            src={gl1}
+            alt="vocab1"
+          />
+          <Image
+            className="h-[300px] w-[160px] border-2 border-[#F97300] mr-2 rounded-md"
+            src={gl2}
+            alt="vocab1"
+          />
+          <Image
+            className="h-[300px] w-[160px] border-2 border-[#F97300] mr-2 rounded-md"
+            src={gl3}
+            alt="vocab1"
+          />
+          <Image
+            className="h-[300px] w-[160px] border-2 border-[#F97300] mr-2 rounded-md"
+            src={gl4}
+            alt="vocab1"
+          />
+          <Image
+            className="h-[300px] w-[160px] border-2 border-[#F97300] mr-2 rounded-md"
+            src={gl5}
+            alt="vocab1"
+          />
+          <Image
+            className="h-[300px] w-[160px] border-2 border-[#F97300] mr-2 rounded-md"
+            src={gl6}
+            alt="vocab1"
+          />
+          <Image
+            className="h-[300px] w-[160px] border-2 border-[#F97300] mr-2 rounded-md"
+            src={gl7}
+            alt="vocab1"
+          />
+          <Image
+            className="h-[300px] w-[160px] border-2 border-[#F97300] mr-2 rounded-md"
+            src={gl8}
+            alt="vocab1"
+          />
+          <Image
+            className="h-[300px] w-[160px] border-2 border-[#F97300] mr-2 rounded-md"
+            src={gl9}
+            alt="vocab1"
+          />
+        </div>
+        <div className=" mt-5 mx-5 text-2xl font-bold">Tech Stack</div>
+        <div className=" flex flex-row my-5 mx-5">
+          <div className="mr-5">React Native</div>
+          <div className="mr-5">Expo</div>
+          <div className="mr-5">Typescript</div>
+        </div>
+
+        <div className=" mx-5 text-2xl font-bold">Details</div>
+        <div className=" mt-5 mx-5 ">
+          Introducing SnapVision, a robust alternative to popular lens-based
+          tools, built to bring advanced computer vision capabilities to your
+          fingertips. Using cutting-edge machine learning algorithms, SnapVision
+          effortlessly identifies objects, products, landmarks, and even text
+          from photos in seconds. Simply open the app, point your camera at any
+          subject, and watch as SnapVision provides instant insight and relevant
+          links. Whether you are exploring a new city, looking for product
+          details, or scanning a menu in a foreign restaurant, SnapVision
+          streamlines your search and helps you gain information immediately. By
+          harnessing real-time analysis, the app offers suggestions tailored to
+          your needs, from translations to online price comparisons. The
+          intuitive interface allows you to manage your searches and save
+          interesting results for future reference, making it easy to revisit
+          past discoveries. SnapVision also prioritizes user privacy, ensuring
+          that image data is securely processed and stored. With a sleek and
+          modern design, the app caters to both tech enthusiasts and casual
+          users, providing an accessible and reliable resource that empowers
+          curiosity. Discover a simpler, smarter way to explore the world around
+          you, and let SnapVision transform everyday moments into amazing
+          learning experiences. Experience the joy of immediate answers and
+          embrace power of instant visual knowledge.
+        </div>
+
+        <div className=" mt-5 mx-5 text-2xl font-bold">Android apk link</div>
+
+        <div className=" mx-5">
+          <a
+            href={
+              "https://drive.google.com/file/d/1kOEbLL06QcKvtt7pzD9PhGlM4DoclXUl/view?usp=drive_link"
+            }
+            className="text-blue-600 hover:underline"
+          >
+            Here is the link to Download
+          </a>
+        </div>
+      </div>
+
+      <div className="h-[10%] w-full" />
+    </>
+  );
+};
 
 const Modal = ({ target }: { target: string }) => {
   console.log(target);
@@ -283,6 +409,7 @@ const Modal = ({ target }: { target: string }) => {
         {target === "one" ? <Vocab /> : null}
         {target === "two" ? <Search /> : null}
         {target === "three" ? <TwitterBot /> : null}
+        {target === "four" ? <GoogleLens /> : null}
       </div>
     </div>
   );
